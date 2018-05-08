@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jaquery.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>PIG DICE</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+<h2>PIG DICE</h2>
+          <div id="startScreen" class="row">
+        <form>
+          <div class="col-md-6">
+            <label for="name0"><span style="color:black ;font-size:30px"><strong>Player 1:</strong></span></label>
+            <input type="text" name="name0" placeholder="Enter your name" id="name0">
+          </div>
+          <div class="col-md-6">
+            <label for="name1"><span style="color:black ;font-size:30px"><strong>Player 2:</strong></span></label>
+            <input type="text" name="name1" placeholder="Enter your name" id="name1">
+          </div>
+          <button id="startButton" type="submit" name="button" class="btn btn-default">Start Game!</button>
+        </form>
+
+      </div>
+      <div id="gameScreen">
+        <div class="row">
+          <div class="player0 col-md-5">
+            <h2 class="player0Name"></h2>
+            <img class="img-responsive" src="pooh.jpg">
+          </div>
+
+          <div class="col-md-2">
+            <br><br>
+            <h1>VS</h1>
+            <button id="rollButton" type="button" name="button" class="btn btn-default">Roll</button>
+            <p class="dieValue"></p>
+            <button id="holdButton" type="button" name="button" class="btn btn-default">Hold</button>
+          </div>
+
+
+          <div class="player1 col-md-5">
+            <h2 class="player1Name"></h2>
+            <img class="img-responsive" src="tiger.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <p id="player0Turn"></p>
+            <h3>Current: <span id="player0Currently"></span></h3>
+            <h3>Total: <span id="player0Total"></span></h3>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-5">
+            <p id="player1Turn"></p>
+            <h3>Current: <span id="player1Currently"></span></h3>
+            <h3>Total: <span id="player1Total"></span></h3>
+          </div>
+        </div>
+      </div>
+      <div id="player0Win">
+        <h2><span class="player0Name"></span>, you are the winner!</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="pooh1.gif" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+            <img src="pooh2.gif" class="animated bounceOutUp img-responsive">
+          </div>
+        </div>
+        <p>Pigs around the world will forever hold you in the highest regard. You are now Lord Piggly.</p>
+        <h3 class="playAgain">Play Again?</h3>
+      </div>
+      <div id="player1Win">
+        <h2><span class="player1Name"></span>, you are the winner!</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="pooh2.gif" class="animated bounceOutUp img-responsive">
+          </div>
+          <div class="col-md-6">
+            <img src="pooh1.gif" class="img-responsive">
+          </div>
+        </div>
+
+        <h3 class="playAgain">Play Again?</h3>
+      </div>
+    </div>
+  </body>
+</html>
